@@ -5,3 +5,4 @@ Group 20 - Lab 7
 Fred Yang & Yiaoping Shu
 
 -Closes Job 8 - USE RDB for Sessions (Fred)
+-Closes Job 9 - Integrate the Caboose package (Fred)
