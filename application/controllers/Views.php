@@ -38,7 +38,7 @@ class Views extends Application {
 
 		// and then pass them on
 		$parms = ['display_tasks' => $converted];
-		return $this->parser->parse('by_priority', $parms, true);
+        return $this->parser->parse('by_priority', $parms, true);
 	}
 
 	function makeCategorizedPanel($tasks)
@@ -59,3 +59,4 @@ function orderByPriority($a, $b)
 	else
 		return 0;
 }
+
