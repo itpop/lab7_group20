@@ -54,6 +54,7 @@ class Mtce extends Application {
 
 		$this->data['pagination'] = $this->pagenav($num);
 		$this->show_page($tasks);
+                
 	}
 
 	// Build the pagination navbar
