@@ -27,7 +27,7 @@
         </div>
         <script src="/assets/js/jquery-1.11.1.min.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>
-        {caboose_script}
+        <!-- {caboose_scripts} *** this line blocks UserRole dropdown menu -->
         {caboose_trailings}
 	</body>
 </html>
