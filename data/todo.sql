@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 14, 2017 at 08:40 AM
+-- Generation Time: March 9, 2017 at 10:08 AM
 -- Server version: 5.7.13
 -- PHP Version: 7.0.8
 
@@ -213,6 +213,22 @@ ALTER TABLE `tasks`
 --
 ALTER TABLE `tasks`
   MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  
+--
+-- Table structure for table `ci_sessions`
+--
+CREATE TABLE IF NOT EXISTS `ci_sessions` (
+        `id` varchar(128) NOT NULL,
+        `ip_address` varchar(45) NOT NULL,
+        `timestamp` int(10) unsigned DEFAULT 0 NOT NULL,
+        `data` blob NOT NULL,
+        KEY `ci_sessions_timestamp` (`timestamp`)
+);
+
+--
+-- Indexes for table `ci_sessions`
+--
+ALTER TABLE ci_sessions ADD PRIMARY KEY (id);
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

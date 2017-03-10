@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
         <link rel="stylesheet" type="text/css" href="/assets/css/default.css"/>
+        {caboose_styles}
 	</head>
 	<body>
         <div class="container">
@@ -17,6 +18,7 @@
             </div>           
             <div id="content">
                 <h1>{pagetitle}</h1>
+                {alerts}
 				<div class="container">
 					<div class="row">
 						<div class="span6">
@@ -34,5 +36,7 @@
         </div>
         <script src="/assets/js/jquery-1.11.1.min.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>
+        <!-- {caboose_scripts} *** this line blocks UserRole dropdown menu -->
+        {caboose_trailings}
 	</body>
 </html>
